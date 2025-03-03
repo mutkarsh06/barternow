@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarterNow - Coming Soon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <div class="container">
+        <h1>BarterNow</h1>
+        <h2>Empowering Events, Elevating Brands</h2>
+        <p>BarterNow connects businesses with the right events to maximize ROI. Discover hassle-free sponsorship deals that drive real impact.</p>
+        <form id="signupForm" onsubmit="submitForm(event)">
+            <div class="email-box">
+                <select id="userType" name="userType" required>
+                    <option value="">Select your role</option>
+                    <option value="sponsor">Sponsor</option>
+                    <option value="organizer">Event Organizer</option>
+                </select>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" id="submitBtn">Notify Me</button>
+            </div>
+            <div id="verificationSection" class="verification-section">
+                <input type="text" id="verificationCode" placeholder="Enter verification code" maxlength="6">
+                <button type="button" onclick="verifyCode()">Verify</button>
+            </div>
+        </form>
+        <div id="message"></div>
+        <div class="launch-message">
+            🚀 Launching Soon • Stay Tuned • 2025
+        </div>
+        <div class="social-icons">
+            <a href="https://instagram.com/barternow" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:info.barternow@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
